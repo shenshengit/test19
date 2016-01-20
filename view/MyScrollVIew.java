@@ -29,7 +29,7 @@ public class MyScrollVIew extends ScrollView {
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
       //  super.onScrollChanged(l, t, oldl, oldt);
-        Log.i("test","l"+l+"t"+t+"oldl"+oldl+"oldt"+oldt);
+      //  Log.i("test","l"+l+"t"+t+"oldl"+oldl+"oldt"+oldt);
         scrollYListener.onScrollY(t);
     }
 
@@ -42,7 +42,7 @@ public class MyScrollVIew extends ScrollView {
     private ScrollYListener scrollYListener;
 
     public interface ScrollYListener{
-        void onScrollY (int t);
+        void onScrollY(int t);
     }
 
 }
